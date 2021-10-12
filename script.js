@@ -27,8 +27,8 @@ function resetBoard() {
 }
 
 function generateBoard() {
-    if (sizeInput.value <= 0) {
-        alert("Size cannot be null!");
+    if (sizeInput.value < 1) {
+        alert("Size needs to be a value greater than 0!");
         return false;
     }
     size = sizeInput.value;
@@ -39,8 +39,8 @@ function generateBoard() {
     }
 
     if (chessboardExists == false) {
-        if (size <= 0) {
-            alert("Size cannot be null!");
+        if (size < 1) {
+            alert("Size needs to be a value greater than 0!");
             return false;
         }
     }
@@ -51,7 +51,10 @@ function generateBoard() {
     document.getElementById("main").innerHTML += chessBoard(size);
     chessboardExists = true;
     generateTable();
-    addQueens(0);
+    if(addQueens(0)==false)
+    {
+        document.getElementById("sizeLabel").innerHTML = "Size " + size + "x" + size + " is not possible.";
+    }
 
     function generateTable() {
         for (let i = 0; i < size; i++) {
