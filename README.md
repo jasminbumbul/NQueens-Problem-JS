@@ -16,7 +16,7 @@ There could be multiple solutions regarding N Queens.
 For example, if N=8, the puzzle has 92 distinct solutions. 
 In this program, i am showing only one of those solutions.
      
-Because of the way this is created using backtracking recursion, an animation could be added showing the creation and removal of the queens while the algorithm is in action. (shown in the gif under)
+Because of the way this is created using backtracking recursion, an animation could be added showing the creation and removal of the queens while the algorithm is in action. (shown in the gif below)
 
 ![alt text](https://github.com/jasminbumbul/NQueens-Problem-JS/blob/main/assets/Eight-queens-animation.webp)
 
