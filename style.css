@@ -1,0 +1,80 @@
+body{
+    background: #ddd;
+    color: white;
+    margin:0px;
+}
+ 
+#chessboard {
+    display: inline-block;
+}
+
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('/assets/chessBackground.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+ 
+span {
+    display: table-cell;
+    width: 70px;
+    height: 70px;
+}
+ 
+.black {
+    background: rgb(161, 111, 90);
+}
+ 
+.white {
+    background: rgb(236, 211, 185);
+}
+
+
+.fa-chess-queen{
+    font-size: 50px; 
+    margin-top: 8px;
+    color: black;
+    transition: 0.5s;
+}
+
+.w3-jumbo{
+    font-size: 50px !important;
+    text-align:center;
+}
+
+#controls{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#sizeLabel{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo{
+    font-size: 25px;
+    padding:25px;
+}
+
+#paragraph{
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.footer{
+    font-size: 25px;
+    padding:25px;
+}
+
+.fa-github-square{
+    color: black;
+    font-size: 18px;
+}
